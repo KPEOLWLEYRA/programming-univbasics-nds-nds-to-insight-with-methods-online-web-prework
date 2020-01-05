@@ -47,6 +47,7 @@ end
 def gross_for_director(director_data)
   
   
+  
 
 end
 
