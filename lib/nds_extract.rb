@@ -36,7 +36,7 @@ def directors_totals(nds)
       column_index += 1 
       # puts "row is #{row_index} column is #{column_index}"
     end 
-    directors_totals[dir_name] = dir_total
+    directors_totals[dir_name] = gross_for_director(director_data)
     row_index += 1 
   end 
  puts directors_totals
@@ -50,9 +50,8 @@ def gross_for_director(director_data)
   while director_data[:movies][index] do 
     total += director_data[:movies][index][:worldwide_gross]
     index += 1 
-  
-  
-
+  end 
+  total 
 end
 
 
