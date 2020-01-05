@@ -9,10 +9,9 @@ require 'directors_database'
 def directors_totals(nds)
   directors_totals = {}
   index1 = 0 
-  while row_index < nds.length do 
+  while index1 < nds.length do 
     dir_name = nds[index1][:name]
-  #^this is where we will pull the name from [:name]
-    while column_index < nds[index1][:movies].length do 
+    # while column_index < nds[index1][:movies].length do 
       gross_for_director(director_data)
       # puts "row is #{row_index} column is #{column_index}"
     end 
