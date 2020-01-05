@@ -11,8 +11,6 @@ def directors_totals(nds)
   index1 = 0 
   while index1 < nds.length do 
     dir_name = nds[index1][:name]
-    # while column_index < nds[index1][:movies].length do 
-      # puts "row is #{row_index} column is #{column_index}
     directors_totals[dir_name] = gross_for_director(nds[index1])
     index1 += 1 
   end 
